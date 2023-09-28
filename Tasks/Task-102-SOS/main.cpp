@@ -23,7 +23,7 @@ int main()
         //On for 500ms
         greenLED = 1;
         buzz.playTone("C");
-        wait_us(WAIT_TIME_MS * 150);  //500ms
+        wait_us(WAIT_TIME_MS * 150);  //150ms
         greenLED = 0;
         buzz.rest();
         wait_us(WAIT_TIME_MS * 150);
