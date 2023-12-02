@@ -44,3 +44,10 @@ int main()
     printf("Invalid - please restart and try again\n");
     while(1);    
 }
+
+//Task 1 *=42 %=37 £=194 space=32
+
+//task scanf 1 
+//when input 500 it says 'You entered 1 correct integer values. The value was 500ms'
+//when input 500a it says 'You entered 1 correct integer values. The value was 500ms'
+//when input a500 when i type a  it says 'You entered 0 correct integer values. The value was 134228455ms'  
