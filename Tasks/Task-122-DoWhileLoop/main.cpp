@@ -31,3 +31,10 @@ int main()
     //Loop forever
     while (true);
 }
+
+//Task3
+//on this one 50, 50a and 100 says "scanf found 1 hits" and say "Grade entered = 50"
+//xzy and 110 just repeats "Enter grade (0..100)"
+
+//Task4
+//so that the inputed values can be record and used
