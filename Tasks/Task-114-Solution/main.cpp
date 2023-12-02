@@ -47,3 +47,7 @@ int main()
     }
 }
 
+//task General Purpose Input Output (GPIO)
+//task3 red led is PC_2,1
+//task3 yellow led is PC_3,1
+//task3 green led is PC_6,1
