@@ -29,33 +29,129 @@ int main()
         //Read button without blocking
         int btn = buttons;     //Local to the while-loop  
 
-        switch (btn) {
-            case 0:
+        //switch (btn) {
+        //    case 0:
             //Nothing pressed
+        //    greenLED = 0;
+        //    yellowLED = 0;
+        //    redLED = !redLED;
+        //    break;
+
+        //    case 1:
+            //Button A only
+        //    redLED = 0;
+        //    yellowLED = 0;            
+        //    greenLED = !greenLED;
+        //    break;
+
+        //    case 3: 
+            //Button A and B
+        //    redLED = 0;
+        //    yellowLED = !yellowLED;            
+        //    greenLED = 0;
+        //    break;
+
+        //    default:
+            //All others
+        //    greenLED = 0;
+        //    yellowLED = 0;
+        //    redLED = 0;
+        //    break;
+
+        //}
+
+        //Task 4
+        switch (btn) {
+            case 1:
+            //when A is pressed the red led flashes
             greenLED = 0;
             yellowLED = 0;
             redLED = !redLED;
             break;
 
-            case 1:
-            //Button A only
-            redLED = 0;
-            yellowLED = 0;            
-            greenLED = !greenLED;
-            break;
-
-            case 3: 
-            //Button A and B
+            case 2:
+            //when B is pressed the yellow led flashes
             redLED = 0;
             yellowLED = !yellowLED;            
             greenLED = 0;
             break;
 
+            case 4:
+            //when C is pressed the green led flashes
+            redLED = 0;
+            yellowLED = 0;            
+            greenLED = !greenLED;
+            break;
+
+            //Task 5
+            case 8:
+            //when D is pressedat all all leds flashes
+            redLED = !redLED;
+            yellowLED = !yellowLED;            
+            greenLED = !greenLED;
+            break;
+
+            //Task 5
+            case 9:
+            //when D is pressedat all all leds flashes
+            redLED = !redLED;
+            yellowLED = !yellowLED;            
+            greenLED = !greenLED;
+            break;
+
+            //Task 5
+            case 10:
+            //when D is pressedat all all leds flashes
+            redLED = !redLED;
+            yellowLED = !yellowLED;            
+            greenLED = !greenLED;
+            break;
+
+            //Task 5
+            case 11:
+            //when D is pressedat all all leds flashes
+            redLED = !redLED;
+            yellowLED = !yellowLED;            
+            greenLED = !greenLED;
+            break;
+
+            //Task 5
+            case 12:
+            //when D is pressedat all all leds flashes
+            redLED = !redLED;
+            yellowLED = !yellowLED;            
+            greenLED = !greenLED;
+            break;
+
+            //Task 5
+            case 13:
+            //when D is pressedat all all leds flashes
+            redLED = !redLED;
+            yellowLED = !yellowLED;            
+            greenLED = !greenLED;
+            break;
+
+            //Task 5
+            case 14:
+            //when D is pressedat all all leds flashes
+            redLED = !redLED;
+            yellowLED = !yellowLED;            
+            greenLED = !greenLED;
+            break;
+
+            //Task 5
+            case 15:
+            //when D is pressedat all all leds flashes
+            redLED = !redLED;
+            yellowLED = !yellowLED;            
+            greenLED = !greenLED;
+            break;
+
             default:
             //All others
-            greenLED = 0;
-            yellowLED = 0;
-            redLED = 0;
+            greenLED = 1;
+            yellowLED = 1;
+            redLED = 1;
             break;
 
         }
@@ -66,4 +162,7 @@ int main()
 }
 
 
-
+//Task 2
+//When A is pressed only green light is flashing
+//when A B is pressed only yellow light flashes
+//when A B C is pressed no lights are on because the default as that is where the case of ABC button press would lead too
