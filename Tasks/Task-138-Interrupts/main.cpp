@@ -19,26 +19,26 @@ DigitalOut greenLED(TRAF_GRN1_PIN);     //Green Traffic 1
 LatchedLED disp(LatchedLED::SEVEN_SEG);
 
 
-void funcA()
+void funcA()//Task 3 led part
 {
-    redLED = !redLED;
+    redLED = !redLED;//Task 3 led part
 }
 
-void funcB()
+void funcB()//Task 3 led part
 {
-    yellowLED = !yellowLED;
+    yellowLED = !yellowLED;//Task 3 led part
 }
 
-void funcTmr()
+void funcTmr()//Task 3 led part
 {
-    greenLED = !greenLED;
+    greenLED = !greenLED;//Task 3 led part
 }
 
 int main()
 {
     //Set up interrupts
-    btnA.rise(&funcA);
-    btnB.fall(&funcB);
+    btnA.rise(&funcA);//Task 3 led part
+    btnB.fall(&funcB);//Task 3 led part
     tick.attach(&funcTmr, 500ms);
     
     //Main loop - mostly sleeps :)
@@ -49,7 +49,12 @@ int main()
     }
 }
 
+//Task 2
+//and the counter increaces by 1 every time
 
+//task 7 
+//when a is pressed red led gets toggled on or off
 
-
+//task 9 
+//when b is pressed yellow led gets toggled on or off
 
