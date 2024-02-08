@@ -83,12 +83,27 @@ int main()
             //Update display
             disp = count;               
         }
+
+        //task 4 Reset part
+        if (btnB_curr == 1 && btnA_curr == 1){ //when a and b is pressed
+            count = 0; // resets counter to 0
+            // The previous value is now set to the current
+            btnB_prev = btnB_curr;
+            btnA_prev = btnA_curr;
+            //Update display
+            disp = count;  
+        }
+            
+                         
+        
         
         // Slow it down a bit (and debounce the switches)
         wait_us(250000);  
     }
 }
 
+//Task 3
+//it does work as intended
 
 
 
