@@ -42,33 +42,32 @@ int main()
         //Update display
         disp = count;
         
-        //Wait for button A
-        while (buttonA == 0) {
-        } 
 
-        if (count > 0 ) {
-            count -= 1;
-        }
 
-        //Wait for button B
-        while (buttonB == 0) {
-        }
-
-        if (count < 99 ) {
-            count += 1;
-        } 
-
+        //task 4
         //Reset condition
         if ((buttonA == 1) && (buttonB == 1)) {
             count = 0;
         }
-
+        //Wait for button A
+        else if (buttonA == 1) {
+            if (count > 0 ) {
+                count = count- 1; 
+            }
+        } 
+        //Wait for button B
+        else if (buttonB == 1) {
+            if (count < 99 ) {
+                count = count + 1; 
+            } 
+        }
         // Slow it down a bit (and debounce the switches)
         wait_us(250000);  
     }
 }
 
-
-
+//Task 3
+// when it runs Pressing A does nothing and when b is pressed the counter goes to one but doesnot increase anymore and when both is pressed it does go to 0
+//does not work as intended
 
 
