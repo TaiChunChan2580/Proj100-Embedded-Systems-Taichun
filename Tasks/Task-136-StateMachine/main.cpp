@@ -140,6 +140,11 @@ int main()
 }
 
 
+//task 2
+//when A button is pressed the count goes up by 1 untill it reaches99
+//and when B button is pressed the count goes down until it goes to 0
 
+//task 4
+//there are 4 inputs button A , Button B ,button c and button D
 
 
