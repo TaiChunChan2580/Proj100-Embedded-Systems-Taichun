@@ -21,10 +21,21 @@ int main()
         unsigned short potVal   = pot.read_u16();
         printf("Potentiometer: %X\n", potVal);
         
-        if (potVal > 0x8000) {
+        //if (potVal > 0x8000) {
+        //    redLED = 1;
+        //    buzz.playTone("C");
+        //} else {
+        //    redLED = 0;
+        //    buzz.rest();
+        //}
+
+        //Task 5
+        if (potVal > 0x9000) {//upper threshold
             redLED = 1;
             buzz.playTone("C");
-        } else {
+        } 
+        
+        else if (potVal < 0x7000) {//lower threshold
             redLED = 0;
             buzz.rest();
         }
@@ -35,3 +46,8 @@ int main()
     }  
 }
 
+//Task 3
+//I was able to obtain the same results
+
+//Task 4
+//I was able to obtain the flasing and pulses of buzzing
