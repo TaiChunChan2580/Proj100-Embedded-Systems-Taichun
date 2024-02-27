@@ -101,3 +101,18 @@ int main()
 }
 
 
+//Task 4
+//so it displaying a string with printf
+
+//Task 5
+//it first prints hello then in the next row prints sizee of string in the next row prints lenght of string
+
+//Task6
+//so when n starts at 0 then counts up each loop untill it reaches 2 and in each loop it prints the value of x and x is = to current x % 65536 and rand()
+
+//Task 7
+//so n starts at 0 till it reaches 3 and in each loop it scans the list a position n and prints that integer
+
+//Task 8
+//when you type in the colours the led with those colours will turn on or off
+
