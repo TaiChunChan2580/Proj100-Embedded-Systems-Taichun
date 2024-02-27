@@ -40,7 +40,7 @@ int main()
 
     //3. Copying strings with strcpy
     char str3[16];
-    strcpy(str3, "Hello");
+    strncpy(str3, "Hello");
     printf("%s\n", str3);
     printf("Size: %d\n", sizeof(str3));
     printf("String length: %d\n", strlen(str3));
@@ -52,7 +52,7 @@ int main()
     printf("%s\n", str5);
     printf("Size: %d\n", sizeof(str5));
     printf("String length: %d\n", strlen(str5));   
-    //strcpy(str4, str5);   //Uncomment this
+    strncpy(str4, str5);   //Uncomment this
 
 
     //4. Marshalling binary data with sprintf
@@ -116,3 +116,5 @@ int main()
 //Task 8
 //when you type in the colours the led with those colours will turn on or off
 
+//Task 9 
+//it only make the code have errors
