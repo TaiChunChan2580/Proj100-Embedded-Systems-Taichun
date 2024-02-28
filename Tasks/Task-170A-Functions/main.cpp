@@ -61,3 +61,5 @@ int main()
 
 }
 
+//Task 5
+//the code is very linear and a lot of waits and on and offs of leds

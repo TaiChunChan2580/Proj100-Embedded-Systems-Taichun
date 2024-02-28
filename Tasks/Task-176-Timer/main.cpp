@@ -42,17 +42,17 @@ int main()
         switch (state)
         {
             case ON:
-                if (tmr.elapsed_time() > (Ton*1ms)) {
+                if (tmr.elapsed_time() > (Ton*1ms)) { //tmr<Ton
                     state = OFF;
-                    dispBackLight = 0;
+                    dispBackLight = 0; // Backlight = 0
                 }
                 break;
 
             case OFF:
-                if (tmr.elapsed_time()>=1ms) {
+                if (tmr.elapsed_time()>=1ms) { //tmr<Tp
                     state = ON;
-                    dispBackLight = 1;
-                    Ton = pot;
+                    dispBackLight = 1; //backlight = 1
+                    Ton = pot; //ton = pot
                     tmr.reset();
                 }
                 break;
@@ -62,6 +62,11 @@ int main()
 
 }
 
+//Task 2
+//It changes the brightness of the lcd screen
 
+//Task 3
+//Very minor flickering
 
-
+//Task4
+//on the code
