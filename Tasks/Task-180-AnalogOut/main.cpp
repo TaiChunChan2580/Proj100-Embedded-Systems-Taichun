@@ -34,7 +34,8 @@ int main()
 
     double Fs = 1000.0;
     double T = 1.0/Fs;
-    double freq = 20.0;
+    //double freq = 20.0;
+    double freq = 1.0;//Task 4
     double DELTA = 2.0*3.1415926*freq*T;
     uint32_t n = 0;
 
@@ -56,6 +57,7 @@ int main()
 
 }
 
-
+//Task 3
+//is is frequency is 20
 
 
